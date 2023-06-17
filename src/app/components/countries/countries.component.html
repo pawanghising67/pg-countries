@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Capital</th>
+            <th>Flag</th>
+            <th>Currencies</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of data">
+            <td>{{c.name.common}}</td>
+            <td>{{c.capital}}</td>
+            <td><img src="{{c.flags.png}}"/></td>
+            <td>{{c.currencies}}</td>
+        </tr>
+    </tbody>
+</table>>
