@@ -1,4 +1,9 @@
-<table>
+<table 
+    border="1" 
+    cellspacing="5px" 
+    cellpadding="5px" 
+    align="center" 
+    style="font-size:20px">
     <thead>
         <tr>
             <th>Name</th>
@@ -11,7 +16,7 @@
         <tr *ngFor="let c of data">
             <td>{{c.name.common}}</td>
             <td>{{c.capital}}</td>
-            <td><img src="{{c.flags.png}}"/></td>
+            <td><img width="100px" height="50px" src="{{c.flags.png}}"/></td>
             <td>{{c.currencies}}</td>
         </tr>
     </tbody>
